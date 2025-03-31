@@ -1,0 +1,749 @@
+[
+  {
+    "pokedex_id": 0,
+    "generation": 1,
+    "category": "Pokémon Bug",
+    "name": {
+      "fr": "MissingNo.",
+      "en": "MissingNo.",
+      "jp": "キャタピー"
+    },
+    "sprites": {
+      "regular": "https://raw.githubusercontent.com/Yarkis01/TyraDex/images/sprites/0/regular.png",
+      "shiny": null,
+      "gmax": null
+    },
+    "types": null,
+    "talents": null,
+    "stats": null,
+    "resistances": null,
+    "evolution": null,
+    "height": null,
+    "weight": null,
+    "egg_groups": null,
+    "sexe": null,
+    "catch_rate": null,
+    "level_100": null,
+    "formes": null
+  },
+  {
+    "pokedex_id": 1,
+    "generation": 1,
+    "category": "Pokémon Graine",
+    "name": {
+      "fr": "Bulbizarre",
+      "en": "Bulbasaur",
+      "jp": "フシギダネ"
+    },
+    "sprites": {
+      "regular": "https://raw.githubusercontent.com/Yarkis01/TyraDex/images/sprites/1/regular.png",
+      "shiny": "https://raw.githubusercontent.com/Yarkis01/TyraDex/images/sprites/1/shiny.png",
+      "gmax": null
+    },
+    "types": [
+      {
+        "name": "Plante",
+        "image": "https://raw.githubusercontent.com/Yarkis01/TyraDex/images/types/plante.png"
+      },
+      {
+        "name": "Poison",
+        "image": "https://raw.githubusercontent.com/Yarkis01/TyraDex/images/types/poison.png"
+      }
+    ],
+    "talents": [
+      {
+        "name": "Engrais",
+        "tc": false
+      },
+      {
+        "name": "Chlorophylle",
+        "tc": true
+      }
+    ],
+    "stats": {
+      "hp": 45,
+      "atk": 49,
+      "def": 49,
+      "spe_atk": 65,
+      "spe_def": 65,
+      "vit": 45
+    },
+    "resistances": [
+      {
+        "name": "Normal",
+        "multiplier": 1
+      },
+      {
+        "name": "Plante",
+        "multiplier": 0.25
+      },
+      {
+        "name": "Feu",
+        "multiplier": 2
+      },
+      {
+        "name": "Eau",
+        "multiplier": 0.5
+      },
+      {
+        "name": "Électrik",
+        "multiplier": 0.5
+      },
+      {
+        "name": "Glace",
+        "multiplier": 2
+      },
+      {
+        "name": "Combat",
+        "multiplier": 0.5
+      },
+      {
+        "name": "Poison",
+        "multiplier": 1
+      },
+      {
+        "name": "Sol",
+        "multiplier": 1
+      },
+      {
+        "name": "Vol",
+        "multiplier": 2
+      },
+      {
+        "name": "Psy",
+        "multiplier": 2
+      },
+      {
+        "name": "Insecte",
+        "multiplier": 1
+      },
+      {
+        "name": "Roche",
+        "multiplier": 1
+      },
+      {
+        "name": "Spectre",
+        "multiplier": 1
+      },
+      {
+        "name": "Dragon",
+        "multiplier": 1
+      },
+      {
+        "name": "Ténèbres",
+        "multiplier": 1
+      },
+      {
+        "name": "Acier",
+        "multiplier": 1
+      },
+      {
+        "name": "Fée",
+        "multiplier": 0.5
+      }
+    ],
+    "evolution": {
+      "pre": null,
+      "next": [
+        {
+          "pokedex_id": 2,
+          "name": "Herbizarre",
+          "condition": "Niveau 16"
+        },
+        {
+          "pokedex_id": 3,
+          "name": "Florizarre",
+          "condition": "Niveau 32"
+        }
+      ],
+      "mega": null
+    },
+    "height": "0,7 m",
+    "weight": "6,9 kg",
+    "egg_groups": ["Monstrueux", "Végétal"],
+    "sexe": {
+      "male": 87.5,
+      "female": 12.5
+    },
+    "catch_rate": 45,
+    "level_100": 1059862,
+    "formes": null
+  },
+  {
+    "pokedex_id": 2,
+    "generation": 1,
+    "category": "Pokémon Graine",
+    "name": {
+      "fr": "Herbizarre",
+      "en": "Ivysaur",
+      "jp": "フシギソウ"
+    },
+    "sprites": {
+      "regular": "https://raw.githubusercontent.com/Yarkis01/TyraDex/images/sprites/2/regular.png",
+      "shiny": "https://raw.githubusercontent.com/Yarkis01/TyraDex/images/sprites/2/shiny.png",
+      "gmax": null
+    },
+    "types": [
+      {
+        "name": "Plante",
+        "image": "https://raw.githubusercontent.com/Yarkis01/TyraDex/images/types/plante.png"
+      },
+      {
+        "name": "Poison",
+        "image": "https://raw.githubusercontent.com/Yarkis01/TyraDex/images/types/poison.png"
+      }
+    ],
+    "talents": [
+      {
+        "name": "Engrais",
+        "tc": false
+      },
+      {
+        "name": "Chlorophylle",
+        "tc": true
+      }
+    ],
+    "stats": {
+      "hp": 60,
+      "atk": 62,
+      "def": 63,
+      "spe_atk": 80,
+      "spe_def": 80,
+      "vit": 60
+    },
+    "resistances": [
+      {
+        "name": "Normal",
+        "multiplier": 1
+      },
+      {
+        "name": "Plante",
+        "multiplier": 0.25
+      },
+      {
+        "name": "Feu",
+        "multiplier": 2
+      },
+      {
+        "name": "Eau",
+        "multiplier": 0.5
+      },
+      {
+        "name": "Électrik",
+        "multiplier": 0.5
+      },
+      {
+        "name": "Glace",
+        "multiplier": 2
+      },
+      {
+        "name": "Combat",
+        "multiplier": 0.5
+      },
+      {
+        "name": "Poison",
+        "multiplier": 1
+      },
+      {
+        "name": "Sol",
+        "multiplier": 1
+      },
+      {
+        "name": "Vol",
+        "multiplier": 2
+      },
+      {
+        "name": "Psy",
+        "multiplier": 2
+      },
+      {
+        "name": "Insecte",
+        "multiplier": 1
+      },
+      {
+        "name": "Roche",
+        "multiplier": 1
+      },
+      {
+        "name": "Spectre",
+        "multiplier": 1
+      },
+      {
+        "name": "Dragon",
+        "multiplier": 1
+      },
+      {
+        "name": "Ténèbres",
+        "multiplier": 1
+      },
+      {
+        "name": "Acier",
+        "multiplier": 1
+      },
+      {
+        "name": "Fée",
+        "multiplier": 0.5
+      }
+    ],
+    "evolution": {
+      "pre": [
+        {
+          "pokedex_id": 1,
+          "name": "Bulbizarre",
+          "condition": "Niveau 16"
+        }
+      ],
+      "next": [
+        {
+          "pokedex_id": 3,
+          "name": "Florizarre",
+          "condition": "Niveau 32"
+        }
+      ],
+      "mega": null
+    },
+    "height": "1,0 m",
+    "weight": "13,0 kg",
+    "egg_groups": ["Monstrueux", "Végétal"],
+    "sexe": {
+      "male": 87.5,
+      "female": 12.5
+    },
+    "catch_rate": 45,
+    "level_100": 1059862,
+    "formes": null
+  },
+  {
+    "pokedex_id": 3,
+    "generation": 1,
+    "category": "Pokémon Graine",
+    "name": {
+      "fr": "Florizarre",
+      "en": "Venusaur",
+      "jp": "フシギバナ"
+    },
+    "sprites": {
+      "regular": "https://raw.githubusercontent.com/Yarkis01/TyraDex/images/sprites/3/regular.png",
+      "shiny": "https://raw.githubusercontent.com/Yarkis01/TyraDex/images/sprites/3/shiny.png",
+      "gmax": {
+        "regular": "https://raw.githubusercontent.com/Yarkis01/TyraDex/images/sprites/3/gmax-regular.png",
+        "shiny": "https://raw.githubusercontent.com/Yarkis01/TyraDex/images/sprites/3/gmax-shiny.png"
+      }
+    },
+    "types": [
+      {
+        "name": "Plante",
+        "image": "https://raw.githubusercontent.com/Yarkis01/TyraDex/images/types/plante.png"
+      },
+      {
+        "name": "Poison",
+        "image": "https://raw.githubusercontent.com/Yarkis01/TyraDex/images/types/poison.png"
+      }
+    ],
+    "talents": [
+      {
+        "name": "Engrais",
+        "tc": false
+      },
+      {
+        "name": "Chlorophylle",
+        "tc": true
+      }
+    ],
+    "stats": {
+      "hp": 80,
+      "atk": 82,
+      "def": 83,
+      "spe_atk": 100,
+      "spe_def": 100,
+      "vit": 80
+    },
+    "resistances": [
+      {
+        "name": "Normal",
+        "multiplier": 1
+      },
+      {
+        "name": "Plante",
+        "multiplier": 0.25
+      },
+      {
+        "name": "Feu",
+        "multiplier": 2
+      },
+      {
+        "name": "Eau",
+        "multiplier": 0.5
+      },
+      {
+        "name": "Électrik",
+        "multiplier": 0.5
+      },
+      {
+        "name": "Glace",
+        "multiplier": 2
+      },
+      {
+        "name": "Combat",
+        "multiplier": 0.5
+      },
+      {
+        "name": "Poison",
+        "multiplier": 1
+      },
+      {
+        "name": "Sol",
+        "multiplier": 1
+      },
+      {
+        "name": "Vol",
+        "multiplier": 2
+      },
+      {
+        "name": "Psy",
+        "multiplier": 2
+      },
+      {
+        "name": "Insecte",
+        "multiplier": 1
+      },
+      {
+        "name": "Roche",
+        "multiplier": 1
+      },
+      {
+        "name": "Spectre",
+        "multiplier": 1
+      },
+      {
+        "name": "Dragon",
+        "multiplier": 1
+      },
+      {
+        "name": "Ténèbres",
+        "multiplier": 1
+      },
+      {
+        "name": "Acier",
+        "multiplier": 1
+      },
+      {
+        "name": "Fée",
+        "multiplier": 0.5
+      }
+    ],
+    "evolution": {
+      "pre": [
+        {
+          "pokedex_id": 1,
+          "name": "Bulbizarre",
+          "condition": "Niveau 16"
+        },
+        {
+          "pokedex_id": 2,
+          "name": "Herbizarre",
+          "condition": "Niveau 32"
+        }
+      ],
+      "next": null,
+      "mega": [
+        {
+          "orbe": "Florizarrite",
+          "sprites": {
+            "regular": "https://raw.githubusercontent.com/Yarkis01/TyraDex/images/sprites/3/mega-regular.png",
+            "shiny": "https://raw.githubusercontent.com/Yarkis01/TyraDex/images/sprites/3/mega-shiny.png"
+          }
+        }
+      ]
+    },
+    "height": "2,0 m",
+    "weight": "100,0 kg",
+    "egg_groups": ["Monstrueux", "Végétal"],
+    "sexe": {
+      "male": 87.5,
+      "female": 12.5
+    },
+    "catch_rate": 45,
+    "level_100": 1059862,
+    "formes": null
+  },
+  {
+    "pokedex_id": 4,
+    "generation": 1,
+    "category": "Pokémon Lézard",
+    "name": {
+      "fr": "Salamèche",
+      "en": "Charmander",
+      "jp": "ヒトカゲ "
+    },
+    "sprites": {
+      "regular": "https://raw.githubusercontent.com/Yarkis01/TyraDex/images/sprites/4/regular.png",
+      "shiny": "https://raw.githubusercontent.com/Yarkis01/TyraDex/images/sprites/4/shiny.png",
+      "gmax": null
+    },
+    "types": [
+      {
+        "name": "Feu",
+        "image": "https://raw.githubusercontent.com/Yarkis01/TyraDex/images/types/feu.png"
+      }
+    ],
+    "talents": [
+      {
+        "name": "Brasier",
+        "tc": false
+      },
+      {
+        "name": "Force Soleil",
+        "tc": true
+      }
+    ],
+    "stats": {
+      "hp": 39,
+      "atk": 52,
+      "def": 43,
+      "spe_atk": 60,
+      "spe_def": 50,
+      "vit": 65
+    },
+    "resistances": [
+      {
+        "name": "Normal",
+        "multiplier": 1
+      },
+      {
+        "name": "Plante",
+        "multiplier": 0.5
+      },
+      {
+        "name": "Feu",
+        "multiplier": 0.5
+      },
+      {
+        "name": "Eau",
+        "multiplier": 2
+      },
+      {
+        "name": "Électrik",
+        "multiplier": 1
+      },
+      {
+        "name": "Glace",
+        "multiplier": 0.5
+      },
+      {
+        "name": "Combat",
+        "multiplier": 1
+      },
+      {
+        "name": "Poison",
+        "multiplier": 1
+      },
+      {
+        "name": "Sol",
+        "multiplier": 2
+      },
+      {
+        "name": "Vol",
+        "multiplier": 1
+      },
+      {
+        "name": "Psy",
+        "multiplier": 1
+      },
+      {
+        "name": "Insecte",
+        "multiplier": 0.5
+      },
+      {
+        "name": "Roche",
+        "multiplier": 2
+      },
+      {
+        "name": "Spectre",
+        "multiplier": 1
+      },
+      {
+        "name": "Dragon",
+        "multiplier": 1
+      },
+      {
+        "name": "Ténèbres",
+        "multiplier": 1
+      },
+      {
+        "name": "Acier",
+        "multiplier": 0.5
+      },
+      {
+        "name": "Fée",
+        "multiplier": 0.5
+      }
+    ],
+    "evolution": {
+      "pre": null,
+      "next": [
+        {
+          "pokedex_id": 5,
+          "name": "Reptincel",
+          "condition": "Niveau 16"
+        },
+        {
+          "pokedex_id": 6,
+          "name": "Dracaufeu",
+          "condition": "Niveau 36"
+        }
+      ],
+      "mega": null
+    },
+    "height": "0,6 m",
+    "weight": "8,5 kg",
+    "egg_groups": ["Draconique", "Monstrueux"],
+    "sexe": {
+      "male": 87.5,
+      "female": 12.5
+    },
+    "catch_rate": 45,
+    "level_100": 1059862,
+    "formes": null
+  },
+  {
+    "pokedex_id": 5,
+    "generation": 1,
+    "category": "Pokémon Flamme",
+    "name": {
+      "fr": "Reptincel",
+      "en": "Charmeleon",
+      "jp": "リザード"
+    },
+    "sprites": {
+      "regular": "https://raw.githubusercontent.com/Yarkis01/TyraDex/images/sprites/5/regular.png",
+      "shiny": "https://raw.githubusercontent.com/Yarkis01/TyraDex/images/sprites/5/shiny.png",
+      "gmax": null
+    },
+    "types": [
+      {
+        "name": "Feu",
+        "image": "https://raw.githubusercontent.com/Yarkis01/TyraDex/images/types/feu.png"
+      }
+    ],
+    "talents": [
+      {
+        "name": "Brasier",
+        "tc": false
+      },
+      {
+        "name": "Force Soleil",
+        "tc": true
+      }
+    ],
+    "stats": {
+      "hp": 58,
+      "atk": 64,
+      "def": 58,
+      "spe_atk": 80,
+      "spe_def": 65,
+      "vit": 80
+    },
+    "resistances": [
+      {
+        "name": "Normal",
+        "multiplier": 1
+      },
+      {
+        "name": "Plante",
+        "multiplier": 0.5
+      },
+      {
+        "name": "Feu",
+        "multiplier": 0.5
+      },
+      {
+        "name": "Eau",
+        "multiplier": 2
+      },
+      {
+        "name": "Électrik",
+        "multiplier": 1
+      },
+      {
+        "name": "Glace",
+        "multiplier": 0.5
+      },
+      {
+        "name": "Combat",
+        "multiplier": 1
+      },
+      {
+        "name": "Poison",
+        "multiplier": 1
+      },
+      {
+        "name": "Sol",
+        "multiplier": 2
+      },
+      {
+        "name": "Vol",
+        "multiplier": 1
+      },
+      {
+        "name": "Psy",
+        "multiplier": 1
+      },
+      {
+        "name": "Insecte",
+        "multiplier": 0.5
+      },
+      {
+        "name": "Roche",
+        "multiplier": 2
+      },
+      {
+        "name": "Spectre",
+        "multiplier": 1
+      },
+      {
+        "name": "Dragon",
+        "multiplier": 1
+      },
+      {
+        "name": "Ténèbres",
+        "multiplier": 1
+      },
+      {
+        "name": "Acier",
+        "multiplier": 0.5
+      },
+      {
+        "name": "Fée",
+        "multiplier": 0.5
+      }
+    ],
+    "evolution": {
+      "pre": [
+        {
+          "pokedex_id": 4,
+          "name": "Salamèche",
+          "condition": "Niveau 16"
+        }
+      ],
+      "next": [
+        {
+          "pokedex_id": 6,
+          "name": "Dracaufeu",
+          "condition": "Niveau 36"
+        }
+      ],
+      "mega": null
+    },
+    "height": "1,1 m",
+    "weight": "19,0 kg",
+    "egg_groups": ["Monstrueux", "Draconique"],
+    "sexe": {
+      "male": 87.5,
+      "female": 12.5
+    },
+    "catch_rate": 45,
+    "level_100": 1059862,
+    "formes": null
+  }
+]

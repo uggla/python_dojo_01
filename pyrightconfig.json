@@ -1,0 +1,13 @@
+{
+  "typeCheckingMode": "standard",
+  "include": ["pokemon"],
+  "pythonVersion": "3.11",
+  "reportMissingImports": true,
+  "executionEnvironments": [
+    {
+      "root": ".",
+      "extraPaths": ["."]
+    }
+  ],
+  "exclude": ["**/__pycache__"]
+}
