@@ -1,6 +1,7 @@
 import pokemon
 import pytest
 
+from pokemon import card_renderer
 from pokemon import exception
 from pokemon.ext_api import tyradex
 from pokemon.tests import fakes
@@ -91,3 +92,51 @@ def test_player_pick_pokemons(monkeypatch, mocker):
     assert isinstance(player.cards[2], pokemon.Pokemon)
     # id 2
     assert player.cards[2].name == "Herbizarre"
+
+
+def test_show_cards_txt(monkeypatch, mocker):
+    monkeypatch.setattr(tyradex, "get_pokemons", fakes.fake_pokemons)
+    mocker.patch(
+        "pokemon.player.random.choice", return_value=fakes.fake_pokemons()[1]
+    )
+
+    player = pokemon.Player()
+    player.pick()
+    txt_renderer = card_renderer.TxtCardRenderer()
+    viewer = pokemon.PlayerView(player, txt_renderer)
+    s = viewer.show_cards()
+    print(s)
+    assert "Bulbizarre" in s
+
+
+def test_show_cards_html(monkeypatch, mocker):
+    monkeypatch.setattr(tyradex, "get_pokemons", fakes.fake_pokemons)
+    mocker.patch(
+        "pokemon.player.random.choice", return_value=fakes.fake_pokemons()[1]
+    )
+
+    player = pokemon.Player()
+    player.pick()
+    html_renderer = card_renderer.HtmlCardRenderer()
+    viewer = pokemon.PlayerView(player, html_renderer)
+    s = viewer.show_cards()
+    print(s)
+    assert "<!DOCTYPE html>" in s
+    assert "Bulbizarre" in s
+
+
+def test_show_cards_html_no_evolution(monkeypatch, mocker):
+    monkeypatch.setattr(tyradex, "get_pokemons", fakes.fake_pokemons)
+    mocker.patch(
+        "pokemon.player.random.choice", return_value=fakes.fake_pokemons()[3]
+    )
+
+    player = pokemon.Player()
+    player.pick()
+    html_renderer = card_renderer.HtmlCardRenderer()
+    viewer = pokemon.PlayerView(player, html_renderer)
+    s = viewer.show_cards()
+    print(s)
+    assert "<!DOCTYPE html>" in s
+    assert "Florizarre" in s
+    assert "Pas d'évolution" in s

@@ -4,3 +4,7 @@ class CannotPickMore(Exception):
 
 class ConnectionError(Exception):
     pass
+
+
+class PokemonNotFound(Exception):
+    pass

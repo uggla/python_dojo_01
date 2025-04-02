@@ -3,6 +3,8 @@ import pokemon
 import pytest
 
 from pokemon.tests import fakes
+from pokemon.ext_api import tyradex
+from pokemon import exception
 
 
 def test_pokemon_instance():
@@ -172,3 +174,38 @@ def test_pokemon_fails_types_name_is_not_a_string():
         "The return values for pokemon_type: '3' are not the expected ones"
         == str(exc.value)
     )
+
+
+def test_pokemon_evolve(monkeypatch):
+    monkeypatch.setattr(tyradex, "get_pokemons", fakes.fake_pokemons)
+    fake_pokemon = copy.deepcopy(fakes.fake_pokemons()[1])
+    p = pokemon.Pokemon.from_dict(fake_pokemon)
+    evolved_p = p.evolve()
+    if evolved_p:
+        assert evolved_p.name == "Herbizarre"
+        assert evolved_p.atk == 62
+        assert evolved_p.evolution == 3
+        assert (
+            evolved_p.img
+            == "https://raw.githubusercontent.com/Yarkis01/TyraDex/"
+            "images/sprites/2/regular.png"
+        )
+        assert evolved_p.type == pokemon.PokemonTypes.PLANTE
+
+
+def test_pokemon_no_evolution(monkeypatch):
+    monkeypatch.setattr(tyradex, "get_pokemons", fakes.fake_pokemons)
+    fake_pokemon = copy.deepcopy(fakes.fake_pokemons()[3])
+    p = pokemon.Pokemon.from_dict(fake_pokemon)
+    evolved_p = p.evolve()
+    assert evolved_p is None
+
+
+def test_pokemon_evolve_fails_pokemon_not_found(monkeypatch):
+    monkeypatch.setattr(tyradex, "get_pokemons", fakes.fake_pokemons)
+    fake_pokemon = copy.deepcopy(fakes.fake_pokemons()[1])
+    fake_pokemon["evolution"]["next"][0]["pokedex_id"] = 10000
+    p = pokemon.Pokemon.from_dict(fake_pokemon)
+    with pytest.raises(exception.PokemonNotFound) as exc:
+        p.evolve()
+    assert "Pokemon with id:'10000' not found" == str(exc.value)
