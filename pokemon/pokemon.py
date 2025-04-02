@@ -2,6 +2,9 @@ from typing import Self
 from dataclasses import dataclass
 from enum import Enum
 
+from pokemon.ext_api import tyradex
+from pokemon import exception
+
 
 class PokemonTypes(Enum):
     ACIER = "Acier"
@@ -109,3 +112,18 @@ class Pokemon:
             img=img,
             type=pokemon_type,
         )
+
+    def evolve(self) -> Self | None:
+        if self.evolution is None:
+            return None
+        return self.get_pokemon(self.evolution)
+
+    @classmethod
+    def get_pokemon(cls, id: int) -> Self:
+        evol_pokemon = next(
+            (p for p in tyradex.get_pokemons() if p["pokedex_id"] == id),
+            None,
+        )
+        if evol_pokemon is None:
+            raise exception.PokemonNotFound(f"Pokemon with id:'{id}' not found")
+        return cls.from_dict(evol_pokemon)
