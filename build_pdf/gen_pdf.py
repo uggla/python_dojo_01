@@ -22,7 +22,7 @@ def save_as_pdf():
             print("Missing hostname or output env variables")
             sys.exit(1)
 
-        url = f"http://{hostname}:8000/slides/?print-pdf#/"
+        url = f"http://{hostname}:8000/slides/{output}.html?print-pdf#/"
         pdf_output = f"/data/{output}.pdf"
         img_output = f"/data/{output}.png"
         poutput = f"{output}.pdf"
@@ -34,7 +34,7 @@ def save_as_pdf():
         page.goto(url, wait_until="load")
 
         # Take a full-page screenshot
-        page.screenshot(path=img_output, full_page=False)
+        page.screenshot(path=img_output, full_page=True)
 
         # Save page as PDF
         page.pdf(path=pdf_output, print_background=True,
