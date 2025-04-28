@@ -1,3 +1,21 @@
+# About
+
+This repository is designed for organizing a Python Craft Dojo — a
+collaborative coding workshop where participants focus on improving their
+programming skills through practice and discussion.
+
+The goal of this dojo is not just to solve a problem, but to emphasize clean
+code, good design practices, and refactoring techniques. The repository
+provides:
+
+    A simple Python exercise as a starting point.
+
+    A structure for iteratively improving the solution during the session.
+
+It’s meant to be a lightweight framework for running a craft dojo where
+participants can learn, experiment, and share coding best practices in a
+friendly environment.
+
 # My presentations using reveal.js
 
 ## Organization
