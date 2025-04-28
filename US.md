@@ -13,7 +13,6 @@ afin de constituer mon équipe et bénéficier de jets de dés selon les points 
 - Chaque Pokémon coûte **1 point**
 - Pour chaque point utilisé :
   - Un Pokémon est tiré au hasard depuis une liste obtenue via une API REST
-  - Ses caractéristiques sont récupérées via une seconde requête API
   - Le Pokémon est ajouté à la collection du joueur
 - Chaque point non utilisé donne droit à **un jet de dé**
 
