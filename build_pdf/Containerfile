@@ -13,6 +13,7 @@ RUN playwright install chrome \
     && chmod -Rf 777 $PLAYWRIGHT_BROWSERS_PATH
 
 
+RUN apt install fonts-noto-color-emoji
 RUN useradd -m python_user
 
 COPY gen_pdf.py /home/python_user
