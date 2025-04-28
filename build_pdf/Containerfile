@@ -1,0 +1,25 @@
+FROM python:3.12
+
+COPY --from=ghcr.io/astral-sh/uv:latest /uv /bin/uv
+
+# RUN uv venv /opt/venv
+# # Use the virtual environment automatically
+# ENV VIRTUAL_ENV=/opt/venv
+ENV PLAYWRIGHT_BROWSERS_PATH=/playwright-browsers
+
+RUN uv pip install playwright --system
+
+RUN playwright install chrome \
+    && chmod -Rf 777 $PLAYWRIGHT_BROWSERS_PATH
+
+
+RUN useradd -m python_user
+
+COPY gen_pdf.py /home/python_user
+
+RUN chown -R python_user:python_user /home/python_user/gen_pdf.py
+
+WORKDIR /home/python_user
+USER python_user
+
+ENTRYPOINT ["python", "gen_pdf.py"]

@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Python dojo 01</title>
+
+    <meta name="description" content="Python dojo 01" />
+    <meta name="author" content="Julien Lenormand" />
+    <meta name="author" content="René Ribaud" />
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui"
+    />
+
+    <link rel="stylesheet" href="../reveal.js/dist/reveal.css" />
+    <link rel="stylesheet" href="../reveal.js/dist/theme/beige.css" />
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia"> -->
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Satisfy"> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet"> -->
+
+    <!-- Code syntax highlighting -->
+    <!-- <link rel="stylesheet" href="../reveal.js/plugin/highlight/monokai.css" /> -->
+    <link rel="stylesheet" href="css/stackoverflow-light.css" />
+
+    <style type="text/css">
+      .iwantitatleft {
+        text-align: left;
+      }
+
+      .longtext {
+        text-align: left;
+        font-size: 0.6em;
+      }
+
+      /* Larger elements */
+      .lots_of_items2 ul {
+        font-size: 0.7em;
+        text-align: left;
+      }
+
+      /* Smaller elements */
+      .lots_of_items3 ul {
+        font-size: 0.55em;
+        text-align: left;
+      }
+
+      .lots_of_items3 ul ul {
+        font-size: 0.8em;
+        text-align: left;
+      }
+
+      .lots_of_items3 table {
+        font-size: 0.8em;
+        float: left;
+        margin-right: 1em;
+      }
+
+      /* Larger elements */
+      .lots_of_items4 ul {
+        font-size: 0.8em;
+        text-align: left;
+      }
+
+      /* Normal elements */
+      .lots_of_items ul {
+        font-size: 0.6em;
+        text-align: left;
+      }
+
+      .lots_of_items ul ul {
+        font-size: 0.8em;
+        text-align: left;
+      }
+
+      .lots_of_items h3 {
+        font-size: 0.7em;
+      }
+
+      .lots_of_items h4 {
+        font-size: 0.6em;
+      }
+
+      .lots_of_items code {
+        font-size: 0.7em;
+      }
+
+      .lots_of_items table {
+        float: left;
+        margin-right: 1em;
+      }
+
+      .clearfix {
+        clear: left;
+      }
+
+      .long_link a {
+        font-size: 0.8em;
+      }
+
+      .pic {
+        position: relative;
+        float: left;
+        width: 50%;
+        top: 0px;
+      }
+
+      /* Remove image margin use in conjuction with .pic */
+      .no_margin img {
+        margin: 0px;
+      }
+
+      .left_text {
+        position: relative;
+        float: left;
+        width: 50%;
+        text-align: left;
+      }
+
+      .left_text_bio {
+        position: relative;
+        float: left;
+        width: 50%;
+        font-size: 0.6em;
+        text-align: left;
+      }
+
+      .right_text {
+        width: 50%;
+        text-align: left;
+        float: right;
+        text-align: left;
+      }
+
+      .skill-list li {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+      }
+      /*
+            .reveal a { color: #007DBA; }
+            .reveal h2 b { color: #0096D6; }
+            .reveal h2 .day { font-size: 0.6em; position:relative; bottom: 20px; }
+            .reveal { font-family: "Source Code Pro", "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans,sans-serif; font-size:40px; }
+            */
+      .reveal {
+        font-family:
+          "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+        font-size: 40px;
+      }
+
+      .reveal h2 {
+        margin-top: 35px;
+      }
+
+      .reveal ul {
+        margin: 0 0 0 0;
+      }
+
+      .reveal pre {
+        width: 100%;
+        font-size: 18px;
+      }
+
+      .reveal pre code {
+        max-height: 100%;
+      }
+
+      .reveal section img {
+        border: none;
+        box-shadow: none;
+        background: rgba(255, 255, 255, 0);
+      }
+
+      body {
+        line-height: 1.1;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="reveal">
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+        <!-- <section data-background="images/background.svg" data-background-size="cover"> -->
+        <section>
+          <h1>Python Dojo</h1>
+          <h1>🐍</h1>
+        </section>
+
+        <section>
+          <h3>Quelques mots sur nous 1/2</h3>
+          <div class="left_text_bio">
+            <ul>
+              <li>Statistiques</li>
+              <ul>
+                <li>Prénom : Julien</li>
+                <li>Nom : Lenormand</li>
+              </ul>
+            </ul>
+
+            <ul>
+              <li>Compétences</li>
+              <ul>
+                <li>Classe : Ingénieur logiciel</li>
+                <li>Dernière guilde : Kaizen</li>
+                <li>Arme préférée : Python</li>
+              </ul>
+            </ul>
+
+            <ul>
+              <li>Traits optionnels</li>
+              <ul>
+                <li>...</li>
+              </ul>
+            </ul>
+          </div>
+          <div class="pic">
+            <img src="images/julien.png" alt="Julien" width="53%" />
+          </div>
+        </section>
+
+        <section>
+          <h3>Quelques mots sur nous 2/2</h3>
+          <div class="left_text_bio">
+            <ul>
+              <li>Statistiques</li>
+              <ul>
+                <li>Prénom : René (Uggla)</li>
+                <li>Nom : Ribaud</li>
+              </ul>
+            </ul>
+
+            <ul>
+              <li>Compétences</li>
+              <ul>
+                <li>Classe : Ingénieur logiciel</li>
+                <li>
+                  Classe précédente : Architecte solution (Cloud / DevOps)
+                </li>
+                <li>Dernière guilde : Red Hat</li>
+                <li>Début du jeu : 1998</li>
+                <li>Armes préférées : Rust / Python</li>
+                <li>Artefact : Openstack Nova</li>
+              </ul>
+            </ul>
+
+            <ul>
+              <li>Traits optionnels</li>
+              <ul>
+                <li>Linux et FLOSS depuis 1995</li>
+                <li>
+                  Ancien Ops, aujourd'hui Dev pour produire mes propres bugs
+                </li>
+              </ul>
+            </ul>
+          </div>
+          <div class="pic">
+            <img src="images/uggla.png" alt="René" width="53%" />
+          </div>
+        </section>
+
+        <section>
+          <h2>Qu'est-ce qu'un Coding-Dojo ? 🤔</h2>
+          <ul>
+            <li>👥 Séance de programmation en groupe</li>
+            <li>💬 Partager, échanger, apprendre, progresser</li>
+            <li>🎯 1 sujet simple (« Kata »)</li>
+            <li>📚 Objectif pédagogique optionnel</li>
+            <li>🏁 Pas d'objectif de "finir"</li>
+            <li>
+              🤝 Valeurs : Bienveillance, Écoute, Partage, Courage, Générosité
+            </li>
+            <li>🔎 Comprendre tout ce qui se passe et se dit ☝️</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Mob Programming 🚀</h2>
+          <div class="lots_of_items2">
+            <ul>
+              <li>🖥️ Un seul poste de travail</li>
+              <li>🔄 Rôles tournants (5-10 minutes)</li>
+              <li>🎺 Driver : exécute les consignes</li>
+              <li>🧐 Navigators : échangent et donnent les intentions</li>
+              <li>🎤 Option : Designated navigator</li>
+              <li>
+                <p>
+                  <strong>Remarque :</strong> ⚡ Pour aujourd'hui, pas de
+                  rotation pour simplifier.<br />
+                  <strong>Julien</strong> assurera le rôle du clavier
+                  "intelligent" tout au long de la session.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section>
+          <h2>Les rôles dans un Dojo 🎭</h2>
+          <div class="lots_of_items2">
+            <ul>
+              <li>
+                ⏱️ <strong>Gardien du temps</strong> : gère les rotations et
+                l’horaire
+              </li>
+              <li>
+                🎯 <strong>Maître du sujet</strong> : présente, tranche sur les
+                doutes
+              </li>
+              <li>
+                🛠️ <strong>Maître de la techno</strong> : aide à débloquer
+                techniquement
+              </li>
+              <li>
+                🤝 <strong>Facilitateur</strong> : assure la participation et la
+                bienveillance
+              </li>
+              <li>
+                👀 <strong>Observateur</strong> (optionnel) : aide à améliorer
+                la session
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section>
+          <h2>Contexte de la Session 🎬</h2>
+          <div class="lots_of_items2">
+            <ul>
+              <li>📚 Nous avons eu plusieurs présentations sur Python :</li>
+              <ul>
+                <li>uv, Rambo Python, Mocking, ...</li>
+              </ul>
+              <li>🎯 Objectif d'aujourd'hui :</li>
+              <ul>
+                <li>Mettre en pratique ces concepts</li>
+                <li>Appliquer les bonnes pratiques de craft ✨</li>
+                <li>Travailler en TDD (Test-Driven Development) 🧪</li>
+              </ul>
+              <li>
+                🛠️ Projet support : écrire une bibliothèque pour un mini-jeu
+                Pokémon en Python 🐍
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section>
+          <h2>Thanks 🙏</h2>
+          <img src="images/thanks.gif" alt="thank_you" width="50%" />
+          <ul>
+            <li>Julien Lenormand &lt;julien.lenormand@gmail.com&gt;</li>
+            <li>René Ribaud &lt;rene.ribaud@gmail.com&gt;</li>
+          </ul>
+        </section>
+      </div>
+    </div>
+
+    <script type="module">
+      import Reveal from "../reveal.js/dist/reveal.esm.js";
+      import Markdown from "../reveal.js/plugin/markdown/markdown.esm.js";
+      import Notes from "../reveal.js/plugin/notes/notes.esm.js";
+      import Highlight from "../reveal.js/plugin/highlight/highlight.esm.js";
+      import Zoom from "../reveal.js/plugin/zoom/zoom.esm.js";
+
+      let deck = new Reveal({
+        plugins: [Markdown, Notes, Highlight, Zoom],
+        controls: true,
+        progress: true,
+        history: true,
+        center: false,
+        width: 960,
+        height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+        // Use this to print in pdf
+        // margin: 0.6,
+
+        // Bounds for smallest/largest possible scale to apply to content
+        minScale: 0.2,
+        maxScale: 1.5,
+
+        transition: "convex",
+      });
+
+      deck.initialize();
+    </script>
+  </body>
+</html>
